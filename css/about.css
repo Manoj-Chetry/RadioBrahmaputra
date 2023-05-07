@@ -64,3 +64,80 @@ b {
 #map {
     height: 100%;
 }
+
+.mapouter,
+#gmap_canvas {
+    display: none;
+}
+
+@media only screen and (min-width: 2000px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 1350px) and (min-width: 920px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 920px) and (min-width: 580px) {
+    .container {
+        width: 580px;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .img-col {
+        display: none;
+    }
+
+    .txt-col {
+        height: fit-content;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 580px) and (min-width: 320px) {
+    .container {
+        width: 320px;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .img-col {
+        display: none;
+    }
+
+    .txt-col {
+        height: fit-content;
+    }
+
+    .mapouter1,
+    #gmap_canvas1 {
+        display: none;
+    }
+
+    .mapouter,
+    #gmap_canvas {
+        display: inline-block;
+    }
+}
