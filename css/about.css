@@ -77,13 +77,18 @@ b {
 }
 
 
-@media only screen and (max-width: 1350px) and (min-width: 920px) {
+@media only screen and (max-width: 1350px) and (min-width: 980px) {
     .container {
-        width: 900px;
+        width: 980px;
     }
+
+    .col {
+        height: 80vh;
+    }
+
 }
 
-@media only screen and (max-width: 920px) and (min-width: 580px) {
+@media only screen and (max-width: 980px) and (min-width: 580px) {
     .container {
         width: 580px;
     }

@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Oswald, sans-serif;
 }
 
 /* Common css */
@@ -16,6 +16,7 @@ a {
 
 p {
     font-weight: 600;
+    font-family: Lato, sans-serif;
 }
 
 nav {
@@ -79,8 +80,8 @@ nav {
 
 .nav-links {
     width: fit-content;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
 }
@@ -96,7 +97,7 @@ nav {
 
 .sticky_menu {
     width: 46px;
-    height: 210px;
+    height: 280px;
     /* background-color: #961c29; */
     position: fixed;
     top: 160px;
@@ -143,7 +144,7 @@ nav {
 
     .sticky_menu {
         width: 40px;
-        height: 160px;
+        height: 190px;
     }
 
     .sticky_links img {
