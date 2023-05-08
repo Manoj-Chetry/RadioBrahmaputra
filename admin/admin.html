@@ -22,8 +22,12 @@
             <hr style="width: 100%; margin-bottom: 20px;">
             <div class="links">
                 <ul>
-                    <li><span>Admin</span> <span>&or;</span></li>
-                    <li><span>CMS</span> <span>&or;</span></li>
+                    <button id="admin-btn" onclick="drop1()">
+                        <li id="admin-drop"><span>Admin</span> <span>&or;</span></li>
+                    </button>
+                    <button id="cms-btn" onclick="drop2()">
+                        <li id="cms-drop"><span>CMS</span> <span>&or;</span></li>
+                    </button>
                 </ul>
             </div>
         </aside>
@@ -32,7 +36,7 @@
                 <h1>Welcome, John Doe <img src="../assets/logo/admin-logo/confetti.png" alt=""></h1>
                 <p>This is your dashboard</p>
             </div>
-            <section>
+            <section class="main">
                 <div class="view">
                     <div class="admin card">
                         <img src="../assets/logo/admin-logo/admin.png" alt="">
@@ -58,8 +62,59 @@
                     </div>
                 </div>
             </section>
+
+            <section class="dashboard">
+                <div class="admin-cont" id="admin-cont">
+                    <a href="add-user.html">
+                        <div class="col">Add User</div>
+                    </a>
+                    <a href="manage-user.html">
+                        <div class="col">Manage Users</div>
+                    </a>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="cms-cont" id="cms-cont">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </section>
         </main>
     </div>
+
+
+
+
+
+
+
+
+    <script>
+        function drop1() {
+            const adminBtn = document.getElementById('admin-btn');
+            const cmsBtn = document.getElementById('cms-btn');
+            const admin = document.getElementById('admin-cont');
+            const cms = document.getElementById('cms-cont');
+
+            admin.style.display = "flex";
+            cms.style.display = "none";
+            adminBtn.style.background = "black";
+            cmsBtn.style.background = "none";
+        }
+        function drop2() {
+            const adminBtn = document.getElementById('admin-btn');
+            const cmsBtn = document.getElementById('cms-btn');
+            const cms = document.getElementById('cms-cont');
+            const admin = document.getElementById('admin-cont');
+
+            cms.style.display = "flex";
+            admin.style.display = "none";
+            adminBtn.style.background = "none";
+            cmsBtn.style.background = "black";
+        }
+    </script>
 </body>
 
 </html>

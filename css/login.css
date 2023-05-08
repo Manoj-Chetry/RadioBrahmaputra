@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: wheat;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    height: fit-content;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px auto;
+}
+
+form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#header {
+    margin-bottom: 20px;
+    display: inline;
+}
+
+
+label {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80%;
+    height: 32px;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 0 30px 0;
+    box-shadow: 0 0 8px 2px lightgray;
+    transition: all .3s ease;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(249, 232, 232, 0.723);
+    box-shadow: none;
+}
+
+#login-btn {
+    background-color: rgb(223, 44, 44);
+    color: white;
+    height: 50px;
+    padding: 0;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    box-shadow: 2px 4px 16px 4px lightgray;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#login-btn:hover {
+    box-shadow: none;
+}
